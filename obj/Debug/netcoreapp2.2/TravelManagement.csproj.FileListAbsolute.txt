@@ -1,0 +1,14 @@
+C:\Users\ASUS\Documents\TravelManagement\bin\Debug\netcoreapp2.2\TravelManagement.deps.json
+C:\Users\ASUS\Documents\TravelManagement\bin\Debug\netcoreapp2.2\TravelManagement.runtimeconfig.json
+C:\Users\ASUS\Documents\TravelManagement\bin\Debug\netcoreapp2.2\TravelManagement.runtimeconfig.dev.json
+C:\Users\ASUS\Documents\TravelManagement\bin\Debug\netcoreapp2.2\TravelManagement.dll
+C:\Users\ASUS\Documents\TravelManagement\bin\Debug\netcoreapp2.2\TravelManagement.pdb
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.RazorAssemblyInfo.cache
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.RazorAssemblyInfo.cs
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.AssemblyInfo.cs
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.RazorTargetAssemblyInfo.cache
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.dll
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.pdb
+C:\Users\ASUS\Documents\TravelManagement\obj\Debug\netcoreapp2.2\TravelManagement.csprojAssemblyReference.cache
