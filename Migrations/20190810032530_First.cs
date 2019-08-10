@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TravelManagement.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class First : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -96,9 +96,10 @@ namespace TravelManagement.Migrations
                 {
                     IDReservation = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    ReservationPersonpersonID = table.Column<int>(nullable: true),
-                    ReservationRoomIDRoom = table.Column<int>(nullable: true),
+                    reservationPersonID = table.Column<int>(nullable: false),
+                    reservationRoomID = table.Column<int>(nullable: false),
                     phonePersonReservation = table.Column<string>(nullable: false),
+                    activeReservation = table.Column<bool>(nullable: false),
                     sinceReservation = table.Column<DateTime>(nullable: false),
                     untilReservation = table.Column<DateTime>(nullable: false),
                     quantityPersonReservation = table.Column<int>(nullable: false),
@@ -108,28 +109,28 @@ namespace TravelManagement.Migrations
                 {
                     table.PrimaryKey("PK_Reservations", x => x.IDReservation);
                     table.ForeignKey(
-                        name: "FK_Reservations_Person_ReservationPersonpersonID",
-                        column: x => x.ReservationPersonpersonID,
+                        name: "FK_Reservations_Person_reservationPersonID",
+                        column: x => x.reservationPersonID,
                         principalTable: "Person",
                         principalColumn: "personID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Reservations_Rooms_ReservationRoomIDRoom",
-                        column: x => x.ReservationRoomIDRoom,
+                        name: "FK_Reservations_Rooms_reservationRoomID",
+                        column: x => x.reservationRoomID,
                         principalTable: "Rooms",
                         principalColumn: "IDRoom",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Reservations_ReservationPersonpersonID",
+                name: "IX_Reservations_reservationPersonID",
                 table: "Reservations",
-                column: "ReservationPersonpersonID");
+                column: "reservationPersonID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Reservations_ReservationRoomIDRoom",
+                name: "IX_Reservations_reservationRoomID",
                 table: "Reservations",
-                column: "ReservationRoomIDRoom");
+                column: "reservationRoomID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Rooms_oRoomIDHotel",

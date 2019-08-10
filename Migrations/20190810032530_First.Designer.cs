@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TravelManagement.Migrations
 {
     [DbContext(typeof(ManagementTravelContext))]
-    [Migration("20190809135009_Second")]
-    partial class Second
+    [Migration("20190810032530_First")]
+    partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
